@@ -56,6 +56,10 @@ public class questions {
         boolean correct = sc.nextBoolean();
         answers[i] = new answer(ans, correct);
         sc.nextLine(); // Consume the newline character
+        questions q = new questions(question, answers);
+        System.out.println(q);
+        
+
     }
     sc.close();
 
@@ -64,13 +68,14 @@ public class questions {
     public static void main(String[] args) {
 
         String question = "are you gay?";
-        answer[] questionANswers  = new answer[3];
+        answer[] questionANswers = new answer[3];
         questionANswers[0] = new answer("yes", true);
         questionANswers[1] = new answer("no", false);
         questionANswers[2] = new answer("maybe", false);
 
        
-            QuestionCreator(question, questionANswers);
+            
+        QuestionCreator(question, questionANswers);
        
         answer[] answers = new answer[2];
         answers[0] = new answer("yes", true);
