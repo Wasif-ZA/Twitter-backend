@@ -35,4 +35,6 @@ public class answer {
         answer a = new answer("yes", true);
         System.out.println(a);
     }
+
+    
 }
