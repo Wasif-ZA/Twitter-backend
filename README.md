@@ -1,1 +1,3 @@
-# Twitter-backend
+# Quizz creator 
+
+tech stack: 
